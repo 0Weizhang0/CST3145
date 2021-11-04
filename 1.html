@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>After School Club</title>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+  <p>{{ message }}</p>
+</div>
+<div id="app1">
+  <p>{{ message }}</p>
+</div>
+<div id="app2">
+  <p>{{ message }}</p>
+</div>
+<div id="app3">
+  <p>{{ message }}</p>
+</div>
+<div id="app4">
+  <p>{{ message }}</p>
+</div>
+<div id="app5">
+<input type="button" value="Add to Chart" @click="test">
+</div>
+
+<script>
+new Vue({
+  el: '#app',
+  data: {
+    message: 'After School Club'
+  }
+})
+new Vue({
+  el: '#app1',
+  data: {
+    message: 'Math'
+  }
+})
+new Vue({
+  el: '#app2',
+  data: {
+    message: 'London'
+  }
+})
+new Vue({
+  el: '#app3',
+  data: {
+    message: 'Price:100'
+  }
+})
+new Vue({
+  el: '#app4',
+  data: {
+    message: 'Number of spaces:5'
+  }
+})
+var app = new Vue({
+el:"#app5",
+methods:{
+test:function(){ 
+alert("finished click")
+}
+}
+})
+</script>
+</body>
+</html>
