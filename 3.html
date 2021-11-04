@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>After School Club</title>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="vue_det">
+    <h1>After School Club</h1>
+    <h1>{{subject}}</h1>
+    <h3>{{location}}</h3>
+    <h3>Price : {{price}}</h3>
+</div>
+
+<div id="app5">
+ <p>Number of spaces: {{ 5 + counter }}</p>
+ <button @click = "counter--">Add to Chart</button>
+</div>
+
+<script>
+var vm = new Vue({
+        el: '#vue_det',
+        data: {
+            subject: "Math",
+            location: "London",
+            price: "100",
+            num: "5",
+        },
+        methods: {
+        }
+     })
+
+var app = new Vue({
+el: '#app5',
+    data: {
+       counter: 0
+    }
+})
+
+</script>
+</body>
+</html>
